@@ -1,0 +1,97 @@
+section{
+     background-repeat: no-repeat;
+}
+.fb-ctn {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem; /* max-w-screen-xl */
+    padding: 4rem 1rem; /* py-16 px-4 */
+    background-color: white;
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .fb-ctn {
+      padding-left: 1.5rem; /* sm:px-6 */
+      padding-right: 1.5rem; /* sm:px-6 */
+    }
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .fb-ctn {
+      padding-left: 2rem; /* lg:px-8 */
+      padding-right: 2rem; /* lg:px-8 */
+    }
+  }
+
+
+
+  .fb-inner {
+    column-fill: balance; /* column-fill:_balance */
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .fb-inner {
+      column-count: 2; /* sm:columns-2 */
+      column-gap: 1.5rem; /* sm:gap-6 */
+    }
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .fb-inner {
+      column-count: 3; /* lg:columns-3 */
+      column-gap: 2rem; /* lg:gap-8 */
+    }
+  }
+  
+
+
+  .fb-list {
+    margin-bottom: 2rem; /* mb-8 */
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .fb-list {
+      break-inside: avoid; /* sm:break-inside-avoid */
+    }
+  }
+ 
+  
+  .qoute>p {
+    border-radius: 1.5rem; /* rounded-xl */
+    background-color: #F9FAFB; /* bg-gray-50 */
+    padding: 1.5rem; /* p-6 */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow */
+  }
+  
+
+
+  .fb-details {
+    margin-top: 1rem; /* mt-4 */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 1rem; /* gap-4 */
+  }
+  
+  .fb-details>img {
+    height: 3rem; /* h-12 */
+    width: 3rem; /* w-12 */
+    border-radius: 50%; /* rounded-full */
+    object-fit: cover; /* object-cover */
+  }
+  
+  .person-dls {
+    font-size: 0.875rem; /* text-sm */
+  }
+  .name {
+    font-weight: 500; /* font-medium */
+  }
+  .profession {
+    margin-top: 0.25rem; /* mt-1 */
+  }
+  
+  

@@ -1,0 +1,172 @@
+
+.outer-div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1536px; /* max-w-screen-2xl */
+    padding: 4rem 1rem; /* py-16 px-4 */
+    background-color: white;
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .outer-div {
+      padding-left: 1.5rem; /* sm:px-6 */
+      padding-right: 1.5rem; /* sm:px-6 */
+    }
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .outer-div {
+      padding-left: 2rem; /* lg:px-8 */
+      padding-right: 2rem; /* lg:px-8 */
+    }
+  }
+  
+  .inner-div {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid grid-cols-1 */
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .inner-div {
+      height: 100vh; /* lg:h-screen */
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* lg:grid-cols-2 */
+    }
+  }
+  
+  .img-ctn {
+    position: relative; /* relative */
+    z-index: 10; /* z-10 */
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .img-ctn {
+      padding-top: 4rem; /* lg:py-16 */
+      padding-bottom: 4rem; /* lg:py-16 */
+    }
+  }
+  .img-in-ctn {
+    position: relative; /* relative */
+    height: 16rem; /* h-64 */
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .img-in-ctn {
+      height: 20rem; /* sm:h-80 */
+    }
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .img-in-ctn {
+      height: 100%; /* lg:h-full */
+    }
+  }
+  
+  .img-in-ctn > img {
+    position: absolute; /* absolute */
+    top: 0; /* inset-0 */
+    right: 0; /* inset-0 */
+    bottom: 0; /* inset-0 */
+    left: 0; /* inset-0 */
+    height: 100%; /* h-full */
+    width: 100%; /* w-full */
+    object-fit: cover; /* object-cover */
+  }
+  .get-text-ctn {
+    position: relative; /* relative */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    background-color: #F3F4F6; /* bg-gray-100 */
+  }
+
+  .get-text-ctn > span {
+    display: none; /* hidden */
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .get-text-ctn > span {
+      position: absolute; /* lg:absolute */
+      top: 0; /* lg:inset-y-0 */
+      bottom: 0; /* lg:inset-y-0 */
+      left: -4rem; /* lg:-start-16 */
+      display: block; /* lg:block */
+      width: 4rem; /* lg:w-16 */
+      background-color: #F3F4F6; /* lg:bg-gray-100 */
+    }
+  }
+  
+ 
+  .txt-items {
+    padding: 2rem; /* p-8 */
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .txt-items {
+      padding: 4rem; /* sm:p-16 */
+    }
+  }
+  
+  /* For screens 1024px and above (lg) */
+  @media (min-width: 1024px) {
+    .txt-items {
+      padding: 6rem; /* lg:p-24 */
+    }
+  }
+  
+  .txt-items>h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .txt-items>h2 {
+      font-size: 1.875rem; /* sm:text-3xl */
+    }
+  }
+
+  .txt-items>p {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+  }
+  
+  /* For screens 640px and above (sm) */
+  @media (min-width: 640px) {
+    .txt-items>p {
+      font-size: 1.875rem; /* sm:text-3xl */
+    }
+  }
+  
+  .git-link {
+    margin-top: 2rem; /* mt-8 */
+    display: inline-block; /* inline-block */
+    border-radius: 0.25rem; /* rounded */
+    border: 1px solid #6366F1; /* border border-indigo-600 */
+    background-color: #6366F1; /* bg-indigo-600 */
+    padding: 0.75rem 3rem; /* px-12 py-3 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #ffffff; /* text-white */
+  }
+  
+  .git-link:hover {
+    background-color: transparent; /* hover:bg-transparent */
+    color: #6366F1; /* hover:text-indigo-600 */
+  }
+  
+  .git-link:focus {
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* focus:ring */
+  }
+  
+  .git-link:active {
+    color: #7C3AED; /* active:text-indigo-500 */
+  }
+  

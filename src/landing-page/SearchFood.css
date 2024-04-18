@@ -1,0 +1,170 @@
+.search-ctn{
+  
+    position: relative; /* relative */
+    background-image: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'); /* bg-[url(...)] */
+    background-size: cover; /* bg-cover */
+    background-position: center; /* bg-center */
+    background-repeat: no-repeat; /* bg-no-repeat */
+  
+  
+}
+.bg-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.75); */
+}
+/* 
+@media (min-width: 640px) {
+    .bg-div {
+      background-color: transparent;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.25));
+    }
+  }
+  
+  [dir="rtl"] .bg-div {
+    @media (min-width: 640px) {
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.25));
+    }
+  } */
+
+  .sf-bg{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem; /* screen-xl */
+    padding: 8rem 1rem; /* py-32 px-4 */
+  }
+  @media (min-width: 640px) { /* sm */
+    .sf-bg {
+      padding-left: 1.5rem; /* px-6 */
+      padding-right: 1.5rem; /* px-6 */
+    }
+  }
+  
+  @media (min-width: 1024px) { /* lg */
+    .sf-bg {
+      display: flex;
+      height: 100vh; /* h-screen */
+      align-items: center;
+      padding-left: 2rem; /* px-8 */
+      padding-right: 2rem; /* px-8 */
+    }
+  }
+  
+  .sf-items {
+    max-width: 36rem; /* max-w-xl */
+    text-align: center; /* text-center */
+  }
+  
+  @media (min-width: 640px) { /* sm */
+    .sf-items {
+      text-align: left; /* ltr:sm:text-left */
+    }
+  }
+  
+  [dir="rtl"] .sf-items {
+    @media (min-width: 640px) { /* sm */
+      text-align: right; /* rtl:sm:text-right */
+    }
+  }
+  
+  
+  .txt-food {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+  }
+  
+  @media (min-width: 640px) { /* sm */
+    .txt-food {
+      font-size: 3rem; /* text-5xl */
+    }
+  }
+  strong{
+    display: block; /* block */
+    font-weight: 800; /* font-extrabold */
+    color: #c53030; /* text-rose-700 */
+  }
+  
+  .p-sf {
+    margin-top: 1rem; /* mt-4 */
+    max-width: 32rem; /* max-w-lg */
+    font-size: 1.875rem; /* text-xl */
+    line-height: 1.5; /* /relaxed */
+  }
+  
+  @media (min-width: 640px) { /* sm */
+    .p-sf {
+      font-size: 1.875rem; /* text-xl */
+      line-height: 1.5; /* /relaxed */
+    }
+  }
+  
+  .anchors-sf {
+    margin-top: 2rem; /* mt-8 */
+    display: flex; /* flex */
+    flex-wrap: wrap; /* flex-wrap */
+    gap: 1rem; /* gap-4 */
+    text-align: center; /* text-center */
+  }
+  
+  .search-sf {
+    display: block; /* block */
+    width: 100%; /* w-full */
+    border-radius: 0.25rem; /* rounded */
+    background-color: #b91c1c; /* bg-rose-600 */
+    padding: 0.75rem 3rem; /* px-12 py-3 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #ffffff; /* text-white */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow */
+  }
+  .search-sf:hover {
+    background-color: #9b2c2c; /* hover:bg-rose-700 */
+  }
+  .search-sf:focus {
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* focus:ring */
+  }
+  .search-sf:active {
+    background-color: #991b1b; /* active:bg-rose-500 */
+  }
+  @media (min-width: 640px) { /* sm */
+    .search-sf {
+      width: auto; /* w-auto */
+    }
+  }
+  
+  .know-sf {
+    display: block; /* block */
+    width: 100%; /* w-full */
+    border-radius: 0.25rem; /* rounded */
+    background-color: #fff; /* bg-white */
+    padding: 0.75rem 3rem; /* px-12 py-3 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #b91c1c; /* text-rose-600 */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow */
+  }
+  .know-sf:hover {
+    color: #9b2c2c; /* hover:text-rose-700 */
+  }
+  .know-sf:focus {
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* focus:ring */
+  }
+  .know-sf:active {
+    color: #991b1b; /* active:text-rose-500 */
+  }
+  @media (min-width: 640px) { /* sm */
+    .know-sf {
+      width: auto; /* w-auto */
+    }
+  }
+  
+  
+
+
+  
