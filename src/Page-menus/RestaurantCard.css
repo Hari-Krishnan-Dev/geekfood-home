@@ -1,0 +1,57 @@
+ 
+
+.main{
+    padding: 10px;
+    margin: 2rem 0;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+input{
+    height: 2.5rem;
+    width: 12rem;
+    border: 2px solid #aaa;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+.inputDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.rating{
+    margin-right: 3rem;
+}
+h1{
+    padding-left: 2rem;
+}
+
+
+
+/* card css  */
+
+
+.restaurantCard{
+    height: 13.5rem;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 9px 26px -20px rgba(0,0,0,0.45);
+    /* margin: 1rem; */
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+
+.divBottom{
+    background-color: #f3f4f6;
+    height: 5rem;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2px;
+}
+span{
+    margin: 0 0 0.5rem 0;
+}
